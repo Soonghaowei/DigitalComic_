@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>fox eats chickens| Demo 2 | Codrops</title>
+		<meta name="description" content="Some distortion hover effects on images using SVG filters." />
+		<meta name="keywords" content="distortion, svg filter, hover, image, effect, web, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Prata|Nunito+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-3">
+				<main>
+			<div class="message">You need to be able to hover to see the effect.</div>
+			
+			
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">fox eats chickens</h1>
+		 
+				</div>
+				
+				</div>
+			<div class="frame__demos">
+					<a href="index.html" class="frame__demo">Effect 1</a>
+					<a href="index3.html" class="frame__demo frame__demo--current">Effect 2</a>
+					<a href="index2.html" class="frame__demo">Effect 3</a>
+					
+					 
+				</div>
+			
+			
+			
+			
+			
+			
+			<div class="content">
+				<svg class="distort" width="550" height="650" viewBox="0 0 950 1050">
+					<filter id="distortionFilter">
+						<feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="5" seed="2" stitchTiles="noStitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+						<feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
+					</filter>
+					<g filter="url(#distortionFilter)">
+						<image class="distort__img" x="70" y="70" xlink:href="img/gongji.PNG" height="350" width="250"/>
+						<image class="distort__img" x="70" y="70" xlink:href="img/tan.PNG" height="350" width="250"/>
+						<image class="distort__img" x="70" y="70" xlink:href="img/jiao.PNG" height="350" width="250"/>
+						<image class="distort__img" x="70" y="70" xlink:href="img/nue.PNG" height="350" width="250"/>
+					</g>
+				</svg>
+				<blockquote class="quote">
+					One morning a fox saw a <a href="#" class="quote__link">cock</a>  He came up to the cock and said,"Can you sing for me?''The cock was<a href="#" class="quote__link">glad</a> formed, .He closes his eyes and began to  <a href="#" class="quote__link">sing</a>.The fox saw that and caught him in his mouth and carried him  <a href="#" class="quote__link">away.</a>  
+					<span class="quote__author">李雾月ss</span>
+				</blockquote>
+			</div>
+		</main>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo3.js"></script>
+	</body>
+</html>
+
+ 
